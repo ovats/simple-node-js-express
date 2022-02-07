@@ -9,7 +9,7 @@ To get the Node server running locally:
 
 - Clone this repo
 - Run `npm install` to install all dependencies
-- Install MongoDB and start it
+- Install MongoDB and start it or use `docker-compose` (check `docker` folder)
 - Run `npm start` to start the service (port 4000)
 
 ## Model
