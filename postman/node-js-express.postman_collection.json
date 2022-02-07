@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "930a8cf2-9486-4ab8-b1fb-776a2cf0254e",
+		"name": "node-js-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add new contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "John",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Linkedin",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "5551234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/contact",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/contact",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get information of a given contact id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/contact/:contactId",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						":contactId"
+					],
+					"variable": [
+						{
+							"key": "contactId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a contact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "John2",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Doe2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.doe2@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "LinkedIn2",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "5559876",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/contact/:contactId",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						":contactId"
+					],
+					"variable": [
+						{
+							"key": "contactId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/contact/:contactId",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						":contactId"
+					],
+					"variable": [
+						{
+							"key": "contactId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

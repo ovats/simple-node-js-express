@@ -29,7 +29,7 @@ Each contact is stored in MongoDB and contains the following information:
 }
 ```
 
-## Endpoints
+## Endpoints (using `curl`)
 
 ### GET /contact
 
@@ -75,3 +75,6 @@ Retrieve the data of a given contact.
 curl -X GET http://localhost:4000/contact/61fd78dc138bcb0e42d30559 
 ```
 
+## Endpoints (using `Postman`)
+
+Import the file `node-js-express.postman_collection.json` in folder `postman` and start using the service.
